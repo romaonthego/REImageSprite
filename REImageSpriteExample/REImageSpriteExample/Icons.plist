@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>YouTube</key>
+    <string>0,0,50,50</string>
+    <key>YouTube_Highlighted</key>
+    <string>100,0,50,50</string>
+    <key>Facebook</key>
+    <string>50,0,50,50</string>
+    <key>Facebook_Highlighted</key>
+    <string>150,0,50,50</string>
+    <key>RSS</key>
+    <string>0,50,50,50</string>
+    <key>RSS_Highlighted</key>
+    <string>100,50,50,50</string>
+    <key>Green</key>
+    <string>50,50,50,50</string>
+    <key>Green_Highlighted</key>
+    <string>150,50,50,50</string>
+    <key>Feedburner</key>
+    <string>0,100,50,50</string>
+    <key>Feedburner_Highlighted</key>
+    <string>100,100,50,50</string>
+    <key>Delicious</key>
+    <string>50,100,50,50</string>
+    <key>Delicious_Highlighted</key>
+    <string>150,100,50,50</string>
+</dict>
+</plist>
