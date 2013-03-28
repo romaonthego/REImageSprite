@@ -1,6 +1,12 @@
 # REImageSprite
 
-CSS-like image sprites for iOS apps. You specify sprite frames in corresponding plist files.
+CSS-like image sprites for iOS apps. 
+
+REImageSprite is a simple `UIImage` category, there's only one task where you specify resource name and sprite (which is essentially a `plist` file and a corresponding image name):
+
+``` objective-c
++ (UIImage *)imageNamed:(NSString *)name fromSprite:(NSString *)sprite
+```
 
 ![Screenshot of REImageSprite](https://github.com/romaonthego/REImageSprite/raw/master/Screenshot.png "REImageSprite Screenshot")
 
@@ -46,14 +52,6 @@ $ pod install
 All you need to do is drop `REImageSprite` files into your project, and add `#include "UIImage+REImageSprite.h"` to the top of classes that will use it.
 
 ## Example Usage
-
-REImageSprite is a simple `UIImage` category, there's only one task where you specify resource name and sprite (which is essentially a `plist` file and a corresponding image name):
-
-``` objective-c
-+ (UIImage *)imageNamed:(NSString *)name fromSprite:(NSString *)sprite
-```
-
-Real life example:
 
 ``` objective-c
 UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(30, 100, 50, 50)];
