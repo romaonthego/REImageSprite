@@ -47,7 +47,7 @@ All you need to do is drop `REImageSprite` files into your project, and add `#in
 
 ## Example Usage
 
-REImageSprite is a simple category, there's only one task where you specify resource name and sprite (which is essentially a `plist` file and a corresponding image name):
+REImageSprite is a simple `UIImage` category, there's only one task where you specify resource name and sprite (which is essentially a `plist` file and a corresponding image name):
 
 ``` objective-c
 + (UIImage *)imageNamed:(NSString *)name fromSprite:(NSString *)sprite
