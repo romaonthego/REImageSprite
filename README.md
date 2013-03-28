@@ -1,6 +1,6 @@
 # REImageSprite
 
-CSS-like image sprites for iOS apps. You specify sprite frames in a corresponding plist files.
+CSS-like image sprites for iOS apps. You specify sprite frames in corresponding plist files.
 
 ![Screenshot of REImageSprite](https://github.com/romaonthego/REImageSprite/raw/master/Screenshot.png "REImageSprite Screenshot")
 
