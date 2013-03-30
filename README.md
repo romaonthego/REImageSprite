@@ -4,7 +4,7 @@ CSS-like image sprites for iOS apps.
 
 ![Screenshot of REImageSprite](https://github.com/romaonthego/REImageSprite/raw/master/Screenshot.png "REImageSprite Screenshot")
 
-REImageSprite is a simple `UIImage` category, there's only one task where you specify resource name and sprite (which is essentially a `plist` file and a corresponding image name):
+REImageSprite is a simple `UIImage` category, there's only one task where you specify resource name and a sprite (which is essentially a `plist` file and a corresponding image file with the same name):
 
 ``` objective-c
 + (UIImage *)imageNamed:(NSString *)name fromSprite:(NSString *)sprite
