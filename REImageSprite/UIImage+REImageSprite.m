@@ -24,15 +24,26 @@
 //
 
 #import "UIImage+REImageSprite.h"
+#import "REImageSpriteCache.h"
 
 @implementation UIImage (REImageSprite)
 
 + (UIImage *)imageNamed:(NSString *)name fromSprite:(NSString *)sprite
 {
-    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:sprite ofType:@"plist"]];
-    NSArray *components = [[[dictionary objectForKey:name] stringByReplacingOccurrencesOfString:@" " withString:@""] componentsSeparatedByString:@","];
+    NSArray *components;
+    UIImage *spriteImage;
     
-    UIImage *spriteImage = [UIImage imageNamed:sprite];
+    if (![[REImageSpriteCache sharedCache].dictionary objectForKey:sprite]) {
+        NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:sprite ofType:@"plist"]];
+        components = [[[dictionary objectForKey:name] stringByReplacingOccurrencesOfString:@" " withString:@""] componentsSeparatedByString:@","];
+        spriteImage = [UIImage imageNamed:sprite];
+        [[REImageSpriteCache sharedCache].dictionary setObject:@{@"array": components, @"image": spriteImage} forKey:[NSString stringWithFormat:@"%@/%@", name, sprite]];
+    } else {
+        NSDictionary *info = [[REImageSpriteCache sharedCache].dictionary objectForKey:[NSString stringWithFormat:@"%@/%@", name, sprite]];
+        components = [info objectForKey:@"array"];
+        spriteImage = [info objectForKey:@"image"];
+    }
+    
     CGImageRef cgIcon = CGImageCreateWithImageInRect(spriteImage.CGImage, CGRectMake([[components objectAtIndex:0] integerValue] * [UIScreen mainScreen].scale,
                                                                                      [[components objectAtIndex:1] integerValue] * [UIScreen mainScreen].scale,
                                                                                      [[components objectAtIndex:2] integerValue] * [UIScreen mainScreen].scale,

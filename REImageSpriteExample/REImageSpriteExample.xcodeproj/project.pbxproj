@@ -21,6 +21,7 @@
 		302D20C41704F5FC0085654F /* Icons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 302D20C31704F5FC0085654F /* Icons.plist */; };
 		302D20C91704F6410085654F /* UIImage+REImageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D20C81704F6410085654F /* UIImage+REImageSprite.m */; };
 		302D20CC1704F6BE0085654F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D20CB1704F6BE0085654F /* RootViewController.m */; };
+		30D2046417074AAD00144E46 /* REImageSpriteCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2046317074AAD00144E46 /* REImageSpriteCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		302D20C81704F6410085654F /* UIImage+REImageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REImageSprite.m"; sourceTree = "<group>"; };
 		302D20CA1704F6BE0085654F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		302D20CB1704F6BE0085654F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		30D2046217074AAD00144E46 /* REImageSpriteCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REImageSpriteCache.h; sourceTree = "<group>"; };
+		30D2046317074AAD00144E46 /* REImageSpriteCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REImageSpriteCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 			children = (
 				302D20C71704F6410085654F /* UIImage+REImageSprite.h */,
 				302D20C81704F6410085654F /* UIImage+REImageSprite.m */,
+				30D2046217074AAD00144E46 /* REImageSpriteCache.h */,
+				30D2046317074AAD00144E46 /* REImageSpriteCache.m */,
 			);
 			name = REImageSprite;
 			path = ../REImageSprite;
@@ -207,6 +212,7 @@
 				302D20AF1704F5AF0085654F /* AppDelegate.m in Sources */,
 				302D20C91704F6410085654F /* UIImage+REImageSprite.m in Sources */,
 				302D20CC1704F6BE0085654F /* RootViewController.m in Sources */,
+				30D2046417074AAD00144E46 /* REImageSpriteCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +327,7 @@
 				302D20BA1704F5AF0085654F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
