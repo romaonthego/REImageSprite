@@ -24,7 +24,7 @@ Build and run the `REImageSpriteExample` project in Xcode to see `REImageSprite`
 
 ### via CocoaPods
 
-The recommended approach for installating REImageSprite is via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation.
+The recommended approach for installating `REImageSprite` is via the [CocoaPods](http://cocoapods.org/) package manager, as it provides flexible dependency management and dead simple installation.
 
 Install CocoaPods if not already available:
 
