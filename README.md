@@ -1,6 +1,6 @@
 # REImageSprite
 
-CSS-like image sprites for iOS apps. 
+CSS-like image sprites for iOS apps.
 
 ![Screenshot of REImageSprite](https://github.com/romaonthego/REImageSprite/raw/master/Screenshot.png "REImageSprite Screenshot")
 
@@ -47,7 +47,7 @@ Install into your Xcode project:
 $ pod install
 ```
 
-### Simple Install
+### Manual Install
 
 All you need to do is drop `REImageSprite` files into your project, and add `#include "UIImage+REImageSprite.h"` to the top of classes that will use it.
 
@@ -59,6 +59,10 @@ UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(30, 100, 50, 50)];
 [button setImage:[UIImage imageNamed:@"YouTube_Highlighted" fromSprite:@"Icons"] forState:UIControlStateHighlighted];
 [self.view addSubview:button];
 ```
+
+## Change log
+
+See [CHANGELOG.MD](https://github.com/romaonthego/REImageSprite/blob/master/CHANGELOG.md)
 
 ## Contact
 
