@@ -1,3 +1,3 @@
 ## 1.0
 
-Initial commit.
+Initial release.
