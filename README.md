@@ -60,10 +60,6 @@ UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(30, 100, 50, 50)];
 [self.view addSubview:button];
 ```
 
-## Changelog
-
-See [Change Log](https://github.com/romaonthego/REImageSprite/blob/master/CHANGELOG.md).
-
 ## Contact
 
 Roman Efimov
