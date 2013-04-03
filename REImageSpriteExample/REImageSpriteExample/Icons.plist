@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>YouTube</key>
+    <key>YouTube</key>
     <string>0,0,50,50</string>
     <key>YouTube_Highlighted</key>
     <string>100,0,50,50</string>
