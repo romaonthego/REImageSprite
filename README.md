@@ -61,7 +61,7 @@ Open your project in Xcode from the .xcworkspace file (not the usual project fil
 $ open MyProject.xcworkspace
 ```
 
-Please note that if your installation fails, it may be because you are installing with a version of Git lower than CocoaPods is expecting. Please ensure that you are running Git >= **1.8.0** by executing git --version. You can get a full picture of the installation details by executing pod install --verbose.
+Please note that if your installation fails, it may be because you are installing with a version of Git lower than CocoaPods is expecting. Please ensure that you are running Git >= **1.8.0** by executing `git --version`. You can get a full picture of the installation details by executing `pod install --verbose`.
 
 ### Manual Install
 
