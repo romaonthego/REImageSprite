@@ -1,5 +1,9 @@
 # REImageSprite
 
+**This project is no longer maintained**.
+
+===========
+
 CSS-like image sprites for iOS apps.
 
 ![Screenshot of REImageSprite](https://github.com/romaonthego/REImageSprite/raw/master/Screenshot.png "REImageSprite Screenshot")
